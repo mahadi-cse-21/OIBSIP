@@ -1,0 +1,55 @@
+.logo > img {
+    height: 70px;
+    width: 70px;
+}
+
+nav {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(225, 229, 230);
+    border-radius: 5px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.nav-item > li {
+    list-style: none;
+}
+
+.nav-item > li > a {
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.nav-item li a:hover {
+    background-color: rgb(44, 5, 120);
+    color: white;
+    transform: scale(1.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-item {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+}
